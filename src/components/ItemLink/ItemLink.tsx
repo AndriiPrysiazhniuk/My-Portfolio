@@ -1,37 +1,32 @@
 import styled from "styled-components";
 import {theme} from "../../Styles/Theme";
 
-export const StyledButton = styled.button`
+export const ItemLink = styled.a`
+    position: relative;
+    z-index: 0;
     font-weight: 400;
     font-size: 14px;
     letter-spacing: 1px;
     text-transform: uppercase;
-    width: 170px;
-    height: 32px;
-    position: relative;
-    z-index: 0;
+    padding: 10px;
+
+
     &:hover {
         &::before {
-            width: 100%;
-            height: 100%;
-            z-index: -1;
+            height: 10px;
         }
     }
 
     &::before {
         content: '';
         display: inline-block;
-        height: 10px;
-        width: 50%;
+        max-height: 10px;
         background-color: ${theme.colors.accent};
-
         position: absolute;
-        bottom: 0;
-        left: 50%;
+        bottom: 5px;
+        left: 0;
+        right: 0;
         z-index: -1;
-        transform: translateX(-50%);
-    }
-    &:focus-visible {
-        outline: 1px solid ${theme.colors.borderColor};
     }
 `
+

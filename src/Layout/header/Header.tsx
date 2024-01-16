@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import {Logo} from "../../components/logo/Logo";
-import {Menu} from "../../components/menu/Menu";
+import {TabMenu} from "../Sections/works/tabMenu/TabMenu";
 import {Container} from "../../components/container/Container";
 import {FlexWrapper} from "../../components/flex-wrapper/FlexWrapper";
 import {HeaderMenu} from "./headerMenu/HeaderMenu";

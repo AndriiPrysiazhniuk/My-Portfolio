@@ -19,11 +19,15 @@ export const GlobalStyles = createGlobalStyle`
     a {
         list-style: none;
         text-decoration: none;
+        color: #fff;
     }
-
+    
     button {
         background-color: unset;
         border: none;
+        color: ${theme.colors.font};
+        cursor: pointer;
+
     }
 
     body {
@@ -47,8 +51,20 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     section:nth-of-type(even) {
-        background-color: ${theme.colors.secondaryBG};
+        background-color: ${theme.colors.secondaryBg};
     }
 
+    h3 {
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.4;
+    }
 `
 
