@@ -11,6 +11,7 @@ export const StyledButton = styled.button`
     position: relative;
     z-index: 0;
     &:hover {
+        
         &::before {
             width: 100%;
             height: 100%;

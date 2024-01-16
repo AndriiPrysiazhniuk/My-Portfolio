@@ -20,6 +20,7 @@ export const GlobalStyles = createGlobalStyle`
         list-style: none;
         text-decoration: none;
         color: #fff;
+        cursor: pointer;
     }
     
     button {
