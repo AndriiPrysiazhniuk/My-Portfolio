@@ -1,7 +1,6 @@
 import React from "react";
 import {SectionTitle} from "../../../components/sectionTitle/SectionTitle";
 import styled from "styled-components";
-import {StyledButton} from "../../../components/StyledButton/StyledButton";
 import {TabMenu} from "./tabMenu/TabMenu";
 import {FlexWrapper} from "../../../components/flex-wrapper/FlexWrapper";
 import {Project} from "../../../components/StyledProject/StyledProject";
@@ -18,7 +17,7 @@ export const Works = () => {
             <SectionTitle>My Works</SectionTitle>
             <TabMenu menuItems={worksItems}/>
             <Container>
-                <FlexWrapper justify={'space-between'} align={'flex-start'}>
+                <FlexWrapper justify={'space-between'} align={'flex-start'} wrap={'wrap'}>
                     <Project title={'Social Network'}
                              description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.'}
                              src={project1}/>
@@ -32,6 +31,8 @@ export const Works = () => {
 }
 
 const StyledWorks = styled.section`
-
+${FlexWrapper}{
+    gap: 30px;
+}
 `
 

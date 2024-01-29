@@ -1,6 +1,5 @@
 import iconsSprite from '../../assets/images/sprite.svg'
 import styled from "styled-components";
-import {MyAnimation} from "../../Styles/Animations/Animation";
 
 type PropsType = {
     iconId: string

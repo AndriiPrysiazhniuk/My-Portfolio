@@ -39,8 +39,8 @@ export const Skills = () => {
         }
     ]
 
-    const mappedSkills = SkillsDataArray.map(el => {
-        return <Myskill  iconId={el.iconId} skillTitle={el.skillTitle}
+    const mappedSkills = SkillsDataArray.map((el, index) => {
+        return <Myskill key={el.iconId} iconId={el.iconId} skillTitle={el.skillTitle}
                         skillDescription={el.skillDescription}/>
     })
     return (

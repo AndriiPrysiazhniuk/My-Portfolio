@@ -1,4 +1,4 @@
-import styled, {css} from "styled-components";
+import styled from "styled-components";
 
 type PropsFlexWrapperType = {
     direction?: string
@@ -13,5 +13,4 @@ export const FlexWrapper = styled.div<PropsFlexWrapperType>`
     align-items: ${props => props.align || 'stretch'};
     flex-wrap: ${props => props.wrap || 'no-wrap'};
     height: 100%;
-    
 `
